@@ -5,6 +5,7 @@ ruby '1.9.3'
 gem 'rails', '4.0.3'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'thin'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
@@ -21,6 +22,7 @@ group :test do
   gem 'rb-notifu', '0.0.4'
   gem 'win32console', '1.3.2'
   gem 'wdm', '0.1.0'
+  gem 'factory_girl_rails', '4.2.1'
 end
 
 gem 'sass-rails', '4.0.1'
