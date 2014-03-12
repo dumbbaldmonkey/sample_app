@@ -5,6 +5,15 @@ namespace :db do
     make_microposts
     make_relationships
   end
+  
+  task depopulate: :environment do
+    destroy_all_users
+  end
+end
+
+def destroy_all_users
+	users = User.all
+	users.destroy_all
 end
 
 def make_users
